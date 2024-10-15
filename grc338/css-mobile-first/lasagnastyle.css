@@ -13,7 +13,7 @@ body {
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
-    font-size: 12pt;
+    font-size: 1em;
 }
 
 figcaption {
@@ -21,14 +21,14 @@ figcaption {
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: italic;
-    font-size: 12pt;
+    font-size: 1em;
 }
 
 h1 {
     padding: 1em 1em 0em;
     background-color: rgb(255, 154, 53);
     color: rgb(255, 255, 255);
-    font-size: 22pt;
+    font-size: 1.83em;
     font-family: Sutro, serif;  
     font-weight: 700;  
     font-style: normal;
@@ -38,7 +38,7 @@ h2 {
     padding: 0.5em 1.4em 1em;
     background-color: rgb(255, 154, 53);
     color: rgb(255, 234, 213);
-    font-size: 16pt;
+    font-size: 1.3em;
     font-family: Sutro, serif;  
     font-weight: 300;  
     font-style: normal;
@@ -48,12 +48,12 @@ h3 {
     padding: 1em 1.3em 0em;
     background-color: rgb(255, 255, 255);
     color: rgb(255, 154, 53);
-    font-size: 14pt;
+    font-size: 1.17em;
     font-family: Sutro, serif;  
     font-weight: 300;  
     font-style: normal;
     text-transform: uppercase;
-    letter-spacing: 1.5pt;
+    letter-spacing: 0.1em;
 }
 
 ul {
