@@ -4,7 +4,7 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 
 div.home-container { 
-	background: url(images/home-background.jpg) center center fixed;
+	background: url(images/windowsill.jpeg) center center fixed;
 	background-size: cover;
 	position: relative;
 	min-height: 100vh;
@@ -132,7 +132,7 @@ p.slogan {
 	font-size: 3.8em;
 	font-family: "gelica", serif;
 	font-style: italic;
-	margin: 1em 0.2em 1.5em;
+	margin: 2em 0.2em 1.5em;
 	color: rgb(255,255,255);	
 }
 	
