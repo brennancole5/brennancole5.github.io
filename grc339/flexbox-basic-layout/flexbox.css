@@ -1,0 +1,82 @@
+/*CSS DOCUMENT*/
+
+div.container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 60em;
+		margin: auto;
+}
+
+header {
+    background: #ffffff;
+	flex: 1 0 100%;
+	margin-left: 1em;
+}
+
+article {
+    background: #ffffff;
+	flex: 2 0 20em;
+	margin-left: 1em;
+}
+
+aside {
+	background: #ffffff;
+	flex: 1 0 10em;
+} 
+
+section {
+	background: #ebebeb;
+	margin: 0em 1em 1em 1em;
+	padding: 1em;
+}
+
+figure {
+	margin: 0em;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+footer {
+    background: #ffffff;
+	flex: 1 0 100%;
+	border-top: 1px solid #ccc;
+	margin: 2em 1em 0em;
+}
+
+h2 {
+	padding-top: 1em;
+}
+
+h3 {
+	color: #000000; 
+}
+
+p {
+	color: #000000; 
+}
+
+ol {
+  list-style: decimal; 
+  list-style-position: outside;
+  padding-left: 0em; 
+}
+
+ol li {
+  display: list-item; 
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	}
+
+img {
+	width: 100%;
+	}
+
