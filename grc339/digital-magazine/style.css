@@ -7,19 +7,22 @@ img {
     display: block;
 }
 
-div.container {
+body {
+  font-family: sans-serif;
+}
+
+div.container, div.home-container {
    max-width: 50em;
    margin: auto;
 }
 
 h1 {
     width: 6em;
-    margin: 0 0.5em;
+    margin-top: 1em;
 }
 
-nav {
-    font-family: sans-serif;
-    margin: 1em 0.5em;
+h1, nav {
+    margin-bottom: 1em;
 }
 
 nav a {
@@ -28,119 +31,184 @@ nav a {
   font-weight: bold;
 }
 
-nav ul {
+nav ul li {
   list-style: none;
 }
 
-nav ul li {
-    margin-bottom: 0.2em;
-}
-
 h2 {
-    font-size: 2.5em;
-    color: #4e70b9;
+    font-family: serif;
     font-weight: bold;
-    margin: 0.2em 0.2em 0;
+    color: #4e70b9;
 }
 
 p {
-    font-family: sans-serif;
     color: #000000;
     line-height: 1.3em;
-    margin: 0 0.5em;
+}
+
+section {
+  margin-bottom: 2em;
 }
 
 section a {
   text-decoration: none;
 }
 
-.secondary h2{
-    font-size: 2em;
+section a figure {
+  padding-bottom: 0.2em;
 }
 
-.secondary figure {
-    padding-top: 2em;
+section.mainstory h2 {
+  font-size: 3em;
 }
 
-.tertiary h2 {
+section.secondary h2{
+  font-size: 2em;
+} 
+
+section.tertiary h2 {
     font-size: 1.2em;
-    margin: 2em 0.5em 0;
     padding: 0.5em 0 0.2em;
-    border-top: 0.1em solid #4e70b9;
-}
+    border-top: 1.5px solid #4e70b9;
+} 
 
-.tertiary p {
+section.tertiary p {
     margin-bottom: 2em;
 }
 
 footer {
+    width: 100%;
     background-color: #4e70b9;
-    padding: 1em 0;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
 
 footer p {
     color:#ffffff;
 }
 
-@media (min-width: 30em) {
-  nav li {
-    display: inline-block; 
-    margin-right: 1.5em;   
-  } 
-
-  h1 {
-    margin: 0;
-  }
-  nav {
-    margin: 1em 0;
-  }
-  h2 {
-    margin: 0.1em 0;
-  }
-  p {
-    margin: 0;
-  }
-  .tertiary h2 {
-    margin: 2em 0 0;
-  }
-}
-
-
 figcaption {
     font-style: italic;
     font-family: sans-serif;
     color:#3c3c3c;
-    margin: 0.3em 0.5em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
-@media (min-width: 30em) {
-figcaption {
-    margin: 0.3em 0;
-  }
-} 
-
 article h2 {
-    margin-top: 1em;
-    padding-bottom: 0.5em;
+  font-size: 4em;
 }
 
 article p {
-    margin-bottom: 1em;
-}
-
-aside {
-    background-color: #c5c5f5;
-    padding: 1em 0.5em;
+  margin-bottom: 1em;
 }
 
 aside h2 {
-    font-size: 1em;
-    margin: 0.2em 0 0;
+  font-size: 1.2em;
+  padding-top: 0.2em;
 }
 
 aside p {
-    padding-bottom: 2em;
-    margin: 0;
+  margin-bottom: 1em;
 }
 
+@media (min-width: 60em) {
+
+  div.home-container {
+    max-width: 80em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  div.container {
+    max-width: 60em;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+  }
+
+  header, footer {
+    grid-column: 1/3;
+  } 
+
+  div.home-container main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  div.home-container aside {
+    margin: 0;
+  }
+
+  div.container aside {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  section.mainstory {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+  }
+
+  section.mainstory a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.mainstory a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.mainstory a figure img {
+    object-fit: cover;
+  }
+
+  section.mainstory a h2 {
+    flex: 0 0 1em;
+  }
+
+  section.mainstory a p {
+    flex: 0 0 4em;
+  }
+
+
+  section.secondary {
+    display: flex;
+  }
+
+  section.secondary a {
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.secondary a figure {
+    flex: 1 0 12em;
+    display: flex;
+  }
+
+  section.secondary a figure img {
+    object-fit: cover;
+  }
+
+  section.secondary a h2 {
+    flex: 0 0 1em;
+  }
+
+  section.secondary a p {
+    flex: 0 0 4em;
+  }
+
+  nav ul li {
+    display: inline; 
+    margin-right: 1em;   
+  }
+} 
