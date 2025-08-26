@@ -9,6 +9,9 @@ img {
 
 body {
   font-family: sans-serif;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 div.container, div.home-container {
@@ -16,8 +19,12 @@ div.container, div.home-container {
    margin: auto;
 }
 
+p, h1, nav {
+  padding: 0 0.5em; 
+}
+
 h1 {
-    width: 6em;
+    width: 12em;
     margin-top: 1em;
 }
 
@@ -27,18 +34,26 @@ h1, nav {
 
 nav a {
   text-decoration: none;
-  color: #4e70b9;
-  font-weight: bold;
+  color: #02A7A8;
+  font-family: articulat-heavy-cf, sans-serif;
+  font-weight: 900;
+  font-style: normal; 
+  text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 nav ul li {
   list-style: none;
 }
 
-h2 {
-    font-family: serif;
-    font-weight: bold;
-    color: #4e70b9;
+h2 {  
+  font-family: articulat-cf, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #02A7A8;
+  padding: 0 0.2em;
+  line-height: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 p {
@@ -66,19 +81,26 @@ section.secondary h2{
   font-size: 2em;
 } 
 
+section.tertiary {
+  margin: 0 0.5em;
+}
+
 section.tertiary h2 {
     font-size: 1.2em;
-    padding: 0.5em 0 0.2em;
-    border-top: 1.5px solid #4e70b9;
+    border-top: 1.5px solid #EF0F67;
+    color: #EF0F67;
+    padding: 0;
+    padding-top: 0.2em;
 } 
 
 section.tertiary p {
     margin-bottom: 2em;
+    padding: 0;
 }
 
 footer {
     width: 100%;
-    background-color: #4e70b9;
+    background-color: #02A7A8;
     padding: 0.5em;
     box-sizing: border-box;
 }
@@ -211,4 +233,9 @@ aside p {
     display: inline; 
     margin-right: 1em;   
   }
+
+  h1, h2, nav, p {
+    padding: 0;
+  }
+
 } 
