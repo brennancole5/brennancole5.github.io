@@ -36,6 +36,7 @@
 
 
                 <form class="newsletter-form" action="/subscribe" method="post">
+
                     <label for="name">Name:</label>
                     <input id="name" name="name" type="text" required>
 
@@ -43,15 +44,18 @@
                     <input id="email" name="email" type="email" required>
 
                     <p>Choose your newsletter:</p>
-                    <label><input type="checkbox" name="newsletters" value="weekly"> Weekly Digest</label><br>
-                    <label><input type="checkbox" name="newsletters" value="artist"> Artist Spotlight</label><br>
-                    <label><input type="checkbox" name="newsletters" value="events"> Underground Wire</label><br>
+
+                    <input type="checkbox" id="weekly" name="newsletters" value="weekly">
+                    <label for="weekly">Weekly Digest</label>
+
+                    <input type="checkbox" id="artist" name="newsletters" value="artist">
+                    <label for="artist">Artist Spotlight</label>
+
+                    <input type="checkbox" id="events" name="newsletters" value="events">
+                    <label for="events">Underground Wire</label>
 
                     <button type="submit">Subscribe</button>
                 </form>
-
-            
-
             
               <footer>
                 <p>All rights reserved.</p>

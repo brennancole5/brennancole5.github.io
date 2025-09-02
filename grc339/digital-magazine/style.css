@@ -321,6 +321,7 @@ body.photogallery input {
 
 body.photogallery h2 {
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 div.photogallery-container {
@@ -338,7 +339,7 @@ section.newsletter {
 section.newsletter a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #f7941d;
+  color: #e02f52;
   font-size: 2em;
   font-style: italic;
 }
@@ -351,7 +352,7 @@ section.newsletter a {
 
 .newsletter-form label {
   display: block;
-  margin-top: 0.8rem;
+  margin-top: 0.8em;
   font-weight: bold;
   color: #ffffff;
 }
@@ -359,28 +360,40 @@ section.newsletter a {
 .newsletter-form input[type="text"],
 .newsletter-form input[type="email"] {
   width: 100%;
-  padding: 0.6rem;
-  margin-top: 0.3rem;
-  border-radius: 1em;
+  padding: 0.6em;
+  margin-top: 0.3em;
 }
 
 .newsletter-form p {
   margin-top: 1rem;
   font-weight: bold;
-  color: #f7941d;
+  color: #e02f52;
+}
+
+.newsletter-form input[type="checkbox"] {
+  margin-right: 0.4em;
+}
+
+.newsletter-form label[for="weekly"],
+.newsletter-form label[for="artist"],
+.newsletter-form label[for="events"] {
+  display: inline-block; 
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 0.6em; 
 }
 
 .newsletter-form button {
-  margin-top: 1rem;
-  padding: 0.8rem 1rem;
-  background: #f7941d;
-  color: #fff;
+  margin-top: 1em;
+  padding: 0.8em 1em;
+  background: #e02f52;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
 }
+
 .newsletter-form button:hover {
   background: #333;
 }
-
